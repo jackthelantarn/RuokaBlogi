@@ -20,6 +20,13 @@
     <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        .map{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -108,9 +115,16 @@
         </section>
 
         <!-- Map -->
-        <section>
-
+       <section class="map_container">
+        <h1>
+            Lämimmät ravintolat
+        </h1>   
+        <section id='map' class="map">
+            <p id="error_text"></p>
         </section>
+       </section>
+        
+        
 
 
     </main>
@@ -118,7 +132,7 @@
     <!-- Footer section -->
     <footer>
         <section class="footer-content">
-            <h3 style="color: white;">Los Grannas</h3>
+            <h3>Los Grannas</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, eligendi!</p>
             <ul class="some">
                 <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -133,7 +147,11 @@
 
     <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/nav.js"></script>
-    <script src="#"></script>
+    <script src="js/map.js" defer></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+   
+        
+    
 </body>
 
 </html>
