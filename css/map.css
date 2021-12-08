@@ -1,0 +1,15 @@
+/*----- Map -----*/
+.map {
+  background: url(../img/maps.jpg);
+  width: 100%;
+  min-height: 30vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map_container {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 100px;
+}
