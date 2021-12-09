@@ -1,13 +1,79 @@
-/** EN SAANU TOIMIMAAN **/
-footer {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../img/spaghetti.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  bottom: 0;
+}
+
+body {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  background-color: #ededed;
+}
+
+
+
+.footer-content {
+  margin-top:auto; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: #fff;  
+}
+
+.some {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.some a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.some a:hover {
+  opacity: 0.9;
+}
+
+.footer-content ul {
+  margin-top: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
   text-align: center;
 }
 
-.footer-content h3 {
-  color: #df612a;
+.footer-content ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer-content ul li a:hover {
+  opacity: 1;
+}
+
+.footer-content .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
 }
