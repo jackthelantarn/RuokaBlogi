@@ -15,17 +15,20 @@ function getlocation() {
 
 }
 
-//
+// Maps settings
 function setmap(center, json_data) {
     console.log(json_data);
     mapboxgl.accessToken = 'pk.eyJ1IjoibmFpbWFuIiwiYSI6ImNrd3dkNjZ6eDAybW8yb3A4a3llamgydWoifQ.nXkTuK4XZ_pcxbi11UK3pQ';
 
+    //create new map
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: center,
         zoom: 14
     });
+
+    // marker and popup for current location
     new mapboxgl.Marker({
         color: "blue",
         draggable: true
@@ -35,6 +38,7 @@ function setmap(center, json_data) {
         ))
         .addTo(map);
 
+    // restaurant marker popup
     for (const feature of json_data.features) {
         const elem = document.createElement('div');
         elem.className = 'marker'
@@ -48,7 +52,7 @@ function setmap(center, json_data) {
 
 }
 
-//
+// get nearby restaurants info json file
 function getdata(center) {
     fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/restaurant.json?type=poi&limit=20&proximity=" + center[0] + "," + center[1] + "&access_token=pk.eyJ1IjoibmFpbWFuIiwiYSI6ImNrd3dkNjZ6eDAybW8yb3A4a3llamgydWoifQ.nXkTuK4XZ_pcxbi11UK3pQ")
         .then(function (response) {
