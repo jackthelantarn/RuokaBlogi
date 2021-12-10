@@ -38,7 +38,7 @@ function setmap(center, json_data) {
         ))
         .addTo(map);
 
-    // restaurant marker popup
+    // restaurants marker and popup
     for (const feature of json_data.features) {
         const elem = document.createElement('div');
         elem.className = 'marker'
