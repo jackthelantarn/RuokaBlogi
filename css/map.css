@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 .map_container {
   width: 80%;
@@ -30,6 +31,4 @@ max-width: 200px;
   font-family: 'Open Sans', sans-serif;
 }
 
-.map_container h1{
-  padding-left: 0px;
-}
+
