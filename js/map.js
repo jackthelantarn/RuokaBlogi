@@ -49,6 +49,16 @@ function setmap(center, json_data) {
                 )
         ).addTo(map);
     }
+    // button for tracking current location
+    map.addControl(
+        new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true,
+            showUserHeading: true
+        })
+    );
 
 }
 
