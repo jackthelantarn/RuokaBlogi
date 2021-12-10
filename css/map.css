@@ -29,3 +29,7 @@ max-width: 200px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
+
+.map_container h1{
+  padding-left: 0px;
+}
