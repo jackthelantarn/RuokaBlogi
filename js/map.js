@@ -2,7 +2,6 @@
 
 // get current location
 function getlocation() {
-    let lat, long;
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
             //setmap([position.coords.longitude, position.coords.latitude]);
