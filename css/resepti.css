@@ -7,9 +7,6 @@
 
 body{
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 300;
-  line-height: 1.6;
-  font-size: 1.5rem;
 }
 
 .banner-area {
@@ -107,8 +104,9 @@ h1 {
 }
 
 .food_name{
-  padding: auto;
-  font-weight: 500px;
+  padding: 10px;
+  font-weight: 600px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
 }
