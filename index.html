@@ -17,19 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway:wght@300;700&display=swap"
         rel="stylesheet">
 
-    <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/map.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet'>
+    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen">
 </head>
 
-
-
 <body>
-
     <!-- Navigation section -->
     <nav>
         <header class="logo">
@@ -80,36 +76,38 @@
         <!-- Laatikot -->
         <section class="boxes">
             <section class="row">
-
                 <section class="col">
-                    <img src="https://www.greenmountainenergy.com/wp-content/uploads/2021/11/All-Nighter-icon_1x.png"
-                        class="boxImg">
+                    <a href="reseptit.html"><img
+                            src="https://www.greenmountainenergy.com/wp-content/uploads/2021/11/All-Nighter-icon_1x.png"
+                            class="boxImg"></a>
                     <h3>Reseptit</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid similique rem soluta
                         sequi excepturi dignissimos, quasi.</p>
-                    <a href="#"><button class="boxBtn">Selaa reseptejä</button></a>
-
+                    <a href="reseptit.html"><button class="boxBtn">Selaa reseptejä</button></a>
                 </section>
+
                 <section class="col">
-                    <img src="https://www.greenmountainenergy.com/wp-content/uploads/2021/11/All-Nighter-icon_1x.png"
-                        class="boxImg">
+                    <a class="venobox" data-autoplay="true" data-vbtype="video" href="video/versio1.mp4"
+                        data-maxWidth="1000px"><img
+                            src="https://www.greenmountainenergy.com/wp-content/uploads/2021/11/All-Nighter-icon_1x.png"
+                            class="boxImg"></a>
                     <h3>Video</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid similique rem soluta
                         sequi excepturi dignissimos, quasi.</p>
-                    <a href="https://youtu.be/XulyYXqDk2s" data-lity="data-lity" class="imglink">
-                        <button class="boxBtn">Katso
+                    <a class="venobox" data-autoplay="true" data-vbtype="video" href="video/versio1.mp4"
+                        data-maxWidth="1000px"><button class=" boxBtn">Katso
                             video</button></a>
-
                 </section>
+
                 <section class="col">
-                    <img src="https://www.greenmountainenergy.com/wp-content/uploads/2021/11/All-Nighter-icon_1x.png"
-                        class="boxImg">
+                    <a href="tietoa_meista.html"><img
+                            src="https://www.greenmountainenergy.com/wp-content/uploads/2021/11/All-Nighter-icon_1x.png"
+                            class="boxImg"></a>
                     <h3>Tietoa meistä</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid similique rem soluta
                         sequi excepturi dignissimos, quasi.</p>
                     <a href="tietoa_meista.html"><button class="boxBtn">Lue lisää</button></a>
                 </section>
-
             </section>
         </section>
 
@@ -120,14 +118,9 @@
                 <p id="error_text"></p>
             </section>
         </section>
-
-
-
-
     </main>
 
     <!-- Footer section -->
-
     <footer>
         <section class="footer-content">
             <div class="some">
@@ -152,15 +145,19 @@
             <p class="copyright">
                 copyright &copy; Los Grannas. 2021.
             </p>
-
         </section>
 
     </footer>
-
-    <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/map.js" defer></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
 </body>
 
 </html>
