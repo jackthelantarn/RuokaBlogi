@@ -1,3 +1,4 @@
+/* body */
 * {
   margin: 0px;
   padding: 0px;
@@ -6,6 +7,9 @@
 
 body{
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.5rem;
 }
 
 .banner-area {
@@ -23,10 +27,10 @@ body{
   
 }
 .content h2{
-    color: white;
-    font-size: 30px;
-    font-family: "Raleway", sans-serif;
-    padding: 70px;
+  color: white;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  padding: 70px;
 }
 .content-area{
   display: flex;
@@ -42,11 +46,97 @@ h1 {
   padding: 15px 8px;
 }
 
- 
-
-.footer-container {
-  position:absolute;
-  bottom:0;
+/* search bar */
+ .search{
+  display: block;
   width:100%;
-  height:60px; 
+  font-size: 18px;
+  font-weight: 300;
+  color:gray;
+  padding: 10px;
+  border: 2px solid #df612a;
+  outline: none;
+}
+
+.search_content{
+  max-width: 600px;
+  margin: 50px auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}  
+
+.search_btn{
+  width: 100%;
+  max-width: 50px;
+  padding: 10px;
+  background: #df612a;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+/* recepie container style*/
+.result_wrapper{
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.result_container{
+  min-height: 100vh;
+}
+
+.recepie{
+  margin-top: 4rem;
+}
+
+.recepie_content{
+  overflow: hidden;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.90);
+  
+}
+
+.food_img{
+  width: 100%;
+  display: block;
+}
+
+.food_name{
+  padding: auto;
+  font-weight: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.recepie_btn{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #df612a;
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 1;
+  transition: 0.3s;
+  margin: 1rem auto;
+}
+
+
+@media screen and (min-width:780px){
+  #top-section{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
 }
