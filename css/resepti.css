@@ -24,10 +24,16 @@ body{
 }
 .content h2{
     color: white;
+<<<<<<< Updated upstream
     font-size: 35px;
     /* font-family: "Raleway", sans-serif; */
     padding: 60px;
     letter-spacing: 0.5px;
+=======
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    padding: 15px 8px;
+>>>>>>> Stashed changes
 }
 .content-area{
 
