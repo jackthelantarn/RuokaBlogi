@@ -4,7 +4,6 @@
 function getlocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
-            //setmap([position.coords.longitude, position.coords.latitude]);
             getdata([position.coords.longitude, position.coords.latitude]);
         }, error => {
             let error_text = document.getElementById('error_text')
@@ -14,7 +13,7 @@ function getlocation() {
 
 }
 
-// Maps settings
+// settin up map with markers and popups
 function setmap(center, json_data) {
     console.log(json_data);
     mapboxgl.accessToken = 'pk.eyJ1IjoibmFpbWFuIiwiYSI6ImNrd3dkNjZ6eDAybW8yb3A4a3llamgydWoifQ.nXkTuK4XZ_pcxbi11UK3pQ';
