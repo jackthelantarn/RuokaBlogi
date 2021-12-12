@@ -1,23 +1,31 @@
+footer {
+  background: linear-gradient(
+    rgba(151, 151, 151, 0.616),
+    rgba(151, 151, 151, 0.616)
+  );
+  text-align: center;
+}
 
 .footer-content {
-  margin-top:auto; 
+  margin-top: auto;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 20px 0;
-  background-color: #fff;  
 }
 
 .some {
   text-align: center;
+  margin-top: 15px;
   padding-bottom: 25px;
-  color: #4b4c4d;
+  color: rgb(0, 0, 0);
+  opacity: 0.75;
 }
 
 .some a {
   font-size: 24px;
   color: inherit;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.89);
   width: 40px;
   height: 40px;
   line-height: 38px;
@@ -29,17 +37,20 @@
 }
 
 .some a:hover {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .footer-content ul {
   margin-top: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 18px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
   line-height: 1.6;
   margin-bottom: 0;
   text-align: center;
+  opacity: 0.8;
 }
 
 .footer-content ul li a {
@@ -54,12 +65,13 @@
 }
 
 .footer-content ul li a:hover {
-  opacity: 1;
+  color: #df612a;
 }
 
 .footer-content .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: #aaa;
+  font-family: "Nunito Sans", sans-serif;
+  opacity: 0.79;
 }
