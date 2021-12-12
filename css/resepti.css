@@ -95,7 +95,6 @@ h1 {
   overflow: hidden;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.90);
   margin-top: 4rem;
-  
 }
 
 .food_img{
@@ -109,6 +108,7 @@ h1 {
   font-size: 20px;
   display: flex;
   justify-content: center;
+  height: 60px;
 }
 
 .recepie_btn{
