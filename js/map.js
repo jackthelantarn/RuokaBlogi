@@ -70,8 +70,6 @@ function getdata(center) {
         }).catch(function (error) {
             console.log(error)
         })
-
-
 }
 
 
