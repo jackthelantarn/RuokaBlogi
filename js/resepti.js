@@ -29,7 +29,7 @@ function setupjson(url) {
             section.innerHTML = html;
 
         } else {
-            html += `Ruoka ei löytynyt! yrittaa uudelleen`
+            html += `<p>Ruoka ei löytynyt! yrittaa uudelleen</p>`
             section.innerHTML = html;
         }
 
