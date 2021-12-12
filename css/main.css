@@ -76,7 +76,10 @@ p {
 
 .col {
   flex-basis: 31%;
-  background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616));
+  background: linear-gradient(
+    rgba(151, 151, 151, 0.616),
+    rgba(151, 151, 151, 0.616)
+  );
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
