@@ -88,13 +88,12 @@ h1 {
   min-height: 100vh;
 }
 
-.recepie{
-  margin-top: 4rem;
-}
+
 
 .recepie_content{
   overflow: hidden;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.90);
+  margin-top: 4rem;
   
 }
 
