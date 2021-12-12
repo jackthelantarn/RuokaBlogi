@@ -88,8 +88,8 @@
 .boxImg_gray {
   transition: 0.3s; /* Animation */
   margin: left;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 5px;
   cursor: pointer;
 }
@@ -97,8 +97,8 @@
 .boxImg_white {
   transition: 0.3s; /* Animation */
   margin-right: 0;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 5px;
   cursor: pointer;
 }
