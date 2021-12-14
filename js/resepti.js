@@ -25,8 +25,7 @@ function setupRecepie(url) {
                          <img src="${meal.strMealThumb}"
                                  class="food_img">
                              <h3 class="food_name">${meal.strMeal}</h3>
-                             <button type="submit" onclick="window.location.href='${meal.strSource}';" class="recepie_btn" id="recepie_btn" > 
-                                 Lue resepti
+                             <button type="submit" onclick="window.location.href='${meal.strSource}';" class="recepie_btn" id="recepie_btn" >Resepti
                              </button> 
                      </section>`
                     }
@@ -35,8 +34,7 @@ function setupRecepie(url) {
                         <img src="${meal.strMealThumb}"
                                 class="food_img">
                             <h3 class="food_name">${meal.strMeal}</h3>
-                            <button type="submit" onclick="window.location.href='${meal.strYoutube}';" class="recepie_btn" id="recepie_btn" > 
-                                Lue resepti
+                            <button type="submit" onclick="window.location.href='${meal.strYoutube}';" class="recepie_btn" id="recepie_btn" >Resepti
                             </button> 
                     </section>`
 
@@ -68,4 +66,5 @@ function searchmeal() {
 }
 
 search_btn.addEventListener("click", searchmeal);
+
 setupRecepie(url_random)
