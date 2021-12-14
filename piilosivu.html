@@ -18,75 +18,75 @@
         rel="stylesheet">
 
     <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/tietoa_meista.css">
+    <link rel="stylesheet" type="text/css" href="css/piilosivu.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
-    <link rel="stylesheet" type="text/css" href="css/map.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
 
 </head>
 
 <body>
 
     <!-- Navigation section -->
-    <nav class="navbar">
-        <header class="logo">Los Grannas</header>
+    <nav>
+        <header class="logo">
+            <h1>Los Grannas</h1>
+        </header>
 
-        <a href="#" class="toggle-button">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="resepti.html">Reseptit</a></li>
+            <li><a href="tietoa_meista.html">Tietoa meistä</a></li>
+        </ul>
 
-        <section class="navbar-links">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="resepti.html">Reseptit</a></li>
-                <li><a class="active" href="tietoa_meista.html">Tietoa meistä</a></li>
-            </ul>
-        </section>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
 
     <!-- Pääkuva -->
     <section class="banner-area">
         <section class="content-area">
             <section class="content">
-                <h2>Tietoa meistä</h2>
+                <h2>Suunnittelusivu</h2>
             </section>
         </section>
     </section>
 
     <main>
+        <!-- Aloituskappale -->
+        <section class="aloitus">
+            <p>Sivuston yleiskuvaus
+                Aliquam erat volutpat. Vestibulum eu arcu euismod, vestibulum elit nec, congue ex. In gravida sem ut
+                urna posuere
+                facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt leo justo, eget
+                tincidunt libero
+                lobortis et. Aliquam erat volutpat. Vestibulum eu arcu euismod, vestibulum elit nec, congue ex. In
+                gravida sem ut urna
+                posuere facilisis.</p>
+        </section>
 
-        <section class="boxes">
+        <section class="kuvia-meista">
             <section class="row">
 
-                <section class="col_gray">
-                    <img src="img/Naima_Original_smaller.jpg" class="boxImg_gray">
+                <section class="col">
                     <h3>Naima</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid similique rem soluta
                         sequi excepturi dignissimos, quasi.</p>
 
                 </section>
-                <section class="col_white">
-
+                <section class="col">
                     <h3>Grete</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid similique rem soluta
                         sequi excepturi dignissimos, quasi.</p>
-                    <img src="img/Grete_square_pikkukuva.jpg" class="boxImg_white">
 
 
                 </section>
-                <section class="col_gray">
-                    <img src="img/Andy_Pikku.jpg" class="boxImg_gray">
+                <section class="col">
                     <h3>Andy</h3>
-                    <p>Gordon Ramsay veljen poikana tunnettu Andy asuu lahonneessa talossa ja harrastaa intohimoisesti
-                        ruoanlaittoa. Hän viettää paljon aikaa yhdessä mäyräkoiransa kanssa.<br>
-                        Andy seuraa setänsä jalanjäljissä ja on kokannut niin kauan kuin hän kykenee muistamaan.
-                        Sedän oppien myötä Andy on perustanut liki kolme ravintolaa Helsinkiin täten osallistunut myös
-                        lukuisiin kokkikilpailuihin ja voittanut joka ikinen kerta. Andy on tottunut buustaamaan
-                        fiiliksiään kupillisella hyvää kahvia kauramaidon kera.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid similique rem soluta
+                        sequi excepturi dignissimos, quasi.</p>
 
                 </section>
 
@@ -115,17 +115,15 @@
                 <li>
                     <a href="tietoa_meista.html">Tietoa meistä</a>
                 </li>
+                <li>
+                    <a href="piilosivu.html">Suunnittelusivu</a>
+                </li>
             </ul>
             <p class="copyright">
                 Copyright &copy; Los Grannas. 2021.
             </p>
-
         </section>
-
     </footer>
-
-    <script src="js/nav.js"></script>
-
 </body>
 
 </html>
