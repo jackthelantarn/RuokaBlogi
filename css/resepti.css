@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -21,15 +21,15 @@ body{
 
 .content {
   text-align: center;
-  
 }
-.content h2{
+.content h2 {
   color: white;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
   padding: 70px;
 }
-.content-area{
+.content-area {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,33 +44,33 @@ h1 {
 }
 
 /* search bar */
- .search{
+.search {
   display: block;
-  width:100%;
+  width: 100%;
   font-size: 18px;
   font-weight: 300;
-  color:gray;
+  color: gray;
   padding: 10px;
   border: 2px solid #df612a;
   outline: none;
 }
 
-.search_content{
+.search_content {
   max-width: 600px;
   margin: 30px auto;
   display: flex;
   align-items: stretch;
   justify-content: center;
-}  
+}
 
-.not_found{
-  grid-template-columns: 1fr!important;
-  font-size:  1.8rem;
+.not_found {
+  grid-template-columns: 1fr !important;
+  font-size: 1.8rem;
   font-weight: 600;
   width: 100%;
 }
 
-.search_btn{
+.search_btn {
   width: 100%;
   max-width: 50px;
   padding: 10px;
@@ -83,36 +83,36 @@ h1 {
 }
 
 /* recepie container style*/
-.result_wrapper{
+.result_wrapper {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   max-width: 1200px;
 }
-.top-section{
+.top-section {
   margin-bottom: 10rem;
 }
-.result_wrapper p{
+.result_wrapper p {
   font-size: 20px;
   font-weight: 500;
 }
 
-.result_container{
+.result_container {
   min-height: 100vh;
 }
 
-.recepie_content{
+.recepie_content {
   overflow: hidden;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.90);
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.9);
   margin-top: 1rem;
 }
 
-.food_img{
+.food_img {
   width: 100%;
   display: block;
 }
 
-.food_name{
+.food_name {
   padding: 10px;
   font-weight: 600px;
   font-size: 20px;
@@ -121,7 +121,7 @@ h1 {
   height: 60px;
 }
 
-.recepie_btn{
+.recepie_btn {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -139,12 +139,10 @@ h1 {
   margin: 1rem auto;
 }
 
-
-@media screen and (min-width:780px){
-  #top-section{
-    display:grid;
+@media screen and (min-width: 780px) {
+  #top-section {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  
 }
