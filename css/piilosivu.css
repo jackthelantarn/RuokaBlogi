@@ -25,6 +25,7 @@ body {
   color: white;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
   padding: 70px;
 }
 .content-area {
@@ -46,5 +47,15 @@ h1 {
   width: 80%;
   margin: auto;
   text-align: left;
-  padding-top: 100px;
+  padding-top: 40px;
+  
+}
+
+.aloitus h1{
+  padding-left: 0;
+}
+
+.aloitus p{
+  padding: 5px;
+   padding-left: 0;
 }
