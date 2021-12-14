@@ -1,14 +1,9 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family: "Nunito Sans", sans-serif;
-  }
-
-  h1 {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
   font-family: "Raleway", sans-serif;
   font-size: 35px;
   letter-spacing: 0.5px;
@@ -16,133 +11,106 @@
   padding: 15px 8px;
 }
 
-  
-  .banner-area {
-    width: 100%;
-    height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../img/spaghetti.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-  }
-  
-  .content {
-    text-align: center;
-    
-  }
-  .content h2{
-      color: white;
-      font-size: 30px;
-      font-family: "Raleway", sans-serif;
-      padding: 70px;
-  }
-  .content-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /*----- Boxes -----*/
-.boxes { 
-  width: 80%;
-  margin: auto;
+/* Pääkuva */
+.banner-area {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/spaghetti.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
   text-align: center;
-  padding-top: 60px;
 }
 
-/*
-.row {
-  margin-top: 5%; 
+.content-area {
   display: flex;
-  justify-content: space-between; 
-}
-*/
-
-.col_gray {
-  flex-basis: 31%;
-  background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616));
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;  
-  box-sizing: border-box;
-  text-align: left;
-  margin-top: 5%; 
-  display: flex;
-  justify-content: space-between; 
+  justify-content: center;
+  align-items: center;
 }
 
-.col_white {
-  flex-basis: 31%;
-  background: linear-gradient(rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0.616));
-  border-radius: 100px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  text-align: right;
-  margin-top: 5%; 
-  display: flex;
-  justify-content: space-between; 
-}
-
-.boxImg_gray {
-  transition: 0.3s; /* Animation */
-  margin: left;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.boxImg_white {
-  transition: 0.3s; /* Animation */
-  margin-right: 0;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.boxImg:hover {
-  transform: scale(1.1);
-}
-
-h3 {
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.5px;
+.content {
   text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-  padding: 10%;
 }
 
-.col p {
+.content h2 {
+  font-size: 35px;
   color: #fff;
+  letter-spacing: 1px;
+  padding: 70px;
 }
 
-.boxBtn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+/* Main area */
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+section h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: left;
   letter-spacing: 0.5px;
-  cursor: pointer;
-  background-color: #df612a;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 1;
-  transition: 0.3s;
 }
 
-.boxBtn:hover {
-  opacity: 0.8; /*Fade out Effect*/
+.content1 p {
+  line-height: 1.7em;
+  text-align: left;
+  font-size: 17px;
+  margin: 18px;
 }
 
-@media screen and (max-width: 750px) {
+.content2 p {
+  line-height: 1.7em;
+  text-align: left;
+  font-size: 17px;
+  margin: 18px;
+}
+
+/*----- Aloituskappale ----*/
+/* .ss {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding-top: 100px;
+  background-color: #7194b8;
+  padding-bottom: 50px;
+} */
+
+/* .col {
+  float: left;
+  width: 33%;
+} */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 150px;
+}
+
+/* @media screen and (max-width: 750px) {
   .row {
     flex-direction: column;
   }
+} */
+
+img {
+  width: 350px;
 }
-  
+
+.image1 {
+  float: left;
+  margin-right: 8rem;
+}
+
+.image2 {
+  float: right;
+  margin-left: 8rem;
+}
+
+.aloitus {
+  padding: 10px;
+  background: #d8d8d8;
+}
+.aloitus2 {
+  padding: 10px;
+}
