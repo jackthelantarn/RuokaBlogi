@@ -41,24 +41,6 @@ h1 {
   padding: 70px;
 }
 
-<<<<<<< HEAD
-.boxImg_gray {
-  transition: 0.3s; /* Animation */
-  margin: left;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.boxImg_white {
-  transition: 0.3s; /* Animation */
-  margin-right: 0;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 5px;
-  cursor: pointer;
-=======
 /* Main area */
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -69,7 +51,6 @@ section h3 {
   margin-bottom: 15px;
   text-align: left;
   letter-spacing: 0.5px;
->>>>>>> Devlopment
 }
 
 .content1 p {
