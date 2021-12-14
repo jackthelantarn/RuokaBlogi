@@ -6,7 +6,7 @@ const section = document.getElementById("top-section");
 url_random = "https://www.themealdb.com/api/json/v1/1/search.php?s=k"
 
 
-
+//gets json from API sets results in html page
 function setupRecepie(url) {
     let html = "";
     fetch(url).then(function (response) {
@@ -16,10 +16,12 @@ function setupRecepie(url) {
         if (json_data.meals) {
             for (const meal of json_data.meals) {
 
+                //if recepie source found
                 if (meal.strSource != null) {
                     let source = meal.strSource
                     let secureSource = source.substr(0, 5)
-                    console.log(secureSource)
+
+                    //if recepie source website is secure
                     if (secureSource == "https") {
                         html += `<section class=" recepie_content" data-id="${meal.idMeal}">
                         <img src="${meal.strMealThumb}" class="food_img">
@@ -30,6 +32,7 @@ function setupRecepie(url) {
                     </section>`
                     }
                 } else {
+                    //if recepie source website is not secure
                     html += `<section class=" recepie_content" data-id="${meal.idMeal}">
                         <img src="${meal.strMealThumb}"
                                 class="food_img">
@@ -46,6 +49,7 @@ function setupRecepie(url) {
             section.innerHTML = html;
 
         } else {
+            //adds css for error message
             html += `Ruokaa ei löytynyt! Yritä uudelleen`
             section.classList.add("not_found");
             section.innerHTML = html
@@ -57,6 +61,7 @@ function setupRecepie(url) {
 
 }
 
+//Gets input value and sends query to API
 function searchmeal() {
     let search_text = document.getElementById("search").value.trim();
     let url_search = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + search_text;
