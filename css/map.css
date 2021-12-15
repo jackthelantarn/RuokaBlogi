@@ -13,7 +13,6 @@
   margin: auto;
   text-align: left;
   padding-top: 100px;
-  
 }
 .marker{
 background-image: url("/img/map-marker-icon.png");
@@ -33,3 +32,11 @@ max-width: 200px;
 }
 
 
+@media screen and (max-width:900px) {
+  .map {
+  margin: 0;
+}
+.map_container h1{
+  padding-left: 0;
+}
+}

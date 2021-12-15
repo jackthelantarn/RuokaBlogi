@@ -24,7 +24,7 @@ function setupRecepie(url) {
                     //if recepie source website is secure
                     if (secureSource == "https") {
                         html += `<section class=" recepie_content" data-id="${meal.idMeal}">
-                        <img src="${meal.strMealThumb}" class="food_img">
+                         <a href="${meal.strSource}" target="_blank" rel="noopener noreferrer"><img src="${meal.strMealThumb}" class="food_img"></a>
                         <h3 class="food_name">${meal.strMeal}</h3>
                         <button type="submit" onclick="window.open('${meal.strSource}')" class="recepie_btn"
                             id="recepie_btn">Resepti
@@ -34,8 +34,7 @@ function setupRecepie(url) {
                 } else {
                     //if recepie source website is not secure
                     html += `<section class=" recepie_content" data-id="${meal.idMeal}">
-                        <img src="${meal.strMealThumb}"
-                                class="food_img">
+                        <a href="${meal.strYoutube}" target="_blank" rel="noopener noreferrer"><img src="${meal.strMealThumb}" class="food_img"></a>
                             <h3 class="food_name">${meal.strMeal}</h3>
                             <button type="submit" onclick="window.open('${meal.strYoutube}')" class="recepie_btn" id="recepie_btn" >Resepti
                             </button> 
@@ -69,6 +68,14 @@ function searchmeal() {
     setupRecepie(url_search);
 
 }
+
+document.getElementById("search").addEventListener("keyup", function (event) {
+    if (event.code == "Enter") {
+        event.preventDefault();
+        searchmeal();
+    }
+})
+
 
 search_btn.addEventListener("click", searchmeal);
 
