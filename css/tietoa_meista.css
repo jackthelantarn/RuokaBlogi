@@ -3,15 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
 }
-h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 35px;
-  letter-spacing: 0.5px;
-  font-weight: 600;
-  padding: 15px 8px;
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  
 }
 
-/* Pääkuva */
 .banner-area {
   width: 100%;
   height: auto;
@@ -20,52 +17,37 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  text-align: center;
 }
 
+.content {
+  text-align: center;
+}
+.content h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 70px;
+  
+}
 .content-area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content {
-  text-align: center;
-}
-
-.content h2 {
-  font-size: 30px;
-  color: #fff;
+h1 {
   font-family: "Raleway", sans-serif;
+  font-size: 35px;
   letter-spacing: 0.5px;
-  padding: 70px;
+  font-weight: 600;
+  padding: 15px 8px;
 }
-
 /* Main area */
-body {
-  font-family: "Nunito Sans", sans-serif;
-}
+/*
 
-section h3 {
-  font-size: 25px;
-  margin-bottom: 15px;
-  text-align: left;
-  letter-spacing: 0.5px;
-}
 
-.content1 p {
-  line-height: 1.7em;
-  text-align: left;
-  font-size: 17px;
-  margin: 18px;
-}
-
-.content2 p {
-  line-height: 1.7em;
-  text-align: left;
-  font-size: 17px;
-  margin: 18px;
-}
+} */
 
 /*----- Aloituskappale ----*/
 /* .ss {
@@ -75,12 +57,12 @@ section h3 {
   padding-top: 100px;
   background-color: #7194b8;
   padding-bottom: 50px;
-} */
+}
 
-/* .col {
+.col {
   float: left;
   width: 33%;
-} */
+}
 
 .row {
   display: flex;
@@ -88,11 +70,11 @@ section h3 {
   margin: 150px;
 }
 
-/* @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .row {
     flex-direction: column;
   }
-} */
+}
 
 img {
   width: 350px;
@@ -114,4 +96,91 @@ img {
 }
 .aloitus2 {
   padding: 10px;
+} */
+
+
+
+/* New attempt */
+
+main{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+
+.image{
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  float: left;
+}
+
+.image2{
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  float: right;
+
+}
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.colom-content{
+  width: 100%;
+}
+
+.content_about_us{
+  padding: 40px 50px;
+}
+
+.content_about_us h3{
+  font-weight:700;
+  font-size:25px;
+  margin-bottom:20px;
+}
+
+.content_about_us p{
+  font-weight:400;
+  font-size:16px;
+  margin-bottom:20px;
+  margin-bottom:15px;
+  text-align:justify;
+}
+ .content_text_left{
+  padding-left: 100px;
+  width: 70%;
+}
+
+.content_text_right{
+  margin-left: 350px; 
+  width: 70%;
+} 
+
+@media screen and (max-width: 1000px){
+  .container{
+    flex-flow: row wrap;
+  }
+  .content_text_left{
+  padding:0;
+  width: 100%;
+}
+
+.content_text_right{
+  margin: 0;
+  width: 100%;
+}
+main{
+  overflow-x:hidden;
+  width: 80%;
+  margin: auto;
+} 
+
+
+
 }
