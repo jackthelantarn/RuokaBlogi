@@ -44,63 +44,6 @@ h1 {
   padding: 15px 8px;
 }
 /* Main area */
-/*
-
-
-} */
-
-/*----- Aloituskappale ----*/
-/* .ss {
-  width: 100%;
-  margin: auto;
-  text-align: left;
-  padding-top: 100px;
-  background-color: #7194b8;
-  padding-bottom: 50px;
-}
-
-.col {
-  float: left;
-  width: 33%;
-}
-
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 150px;
-}
-
-@media screen and (max-width: 750px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-img {
-  width: 350px;
-}
-
-.image1 {
-  float: left;
-  margin-right: 8rem;
-}
-
-.image2 {
-  float: right;
-  margin-left: 8rem;
-}
-
-.aloitus {
-  padding: 10px;
-  background: #d8d8d8;
-}
-.aloitus2 {
-  padding: 10px;
-} */
-
-
-
-/* New attempt */
 
 main{
   width: 80%;
@@ -153,7 +96,6 @@ main{
   line-height: 1.7em;
 }
  .content_text_left{
-  padding-left: 100px;
   width: 70%;
 }
 
