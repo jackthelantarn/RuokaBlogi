@@ -46,6 +46,7 @@ h1 {
 main {
   width: 80%;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 .image {
@@ -114,6 +115,5 @@ main {
   }
   main {
     overflow-x: hidden;
-    
   }
 }
