@@ -6,13 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
 }
 .map_container {
   width: 80%;
   margin: auto;
   text-align: left;
   padding-top: 100px;
+
+}
+.map_container h1{
+  padding-left: 0;
 }
 .marker{
 background-image: url("/img/map-marker-icon.png");
