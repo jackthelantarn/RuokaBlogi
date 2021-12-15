@@ -57,29 +57,37 @@
     <main>
         <!-- Aloituskappale -->
         <section class="aloitus">
-            <h1>Sivuston yleiskuvaus</h1>
+            <h1>Yleiskuvaus</h1>
             <p>
-                Meidän sivu on kansainvälinen ruokaresepti sivu.
-                Ruoka kutsutaan nimella rajapinnalta ja sieltä saadaan lista.
-                Sitä lista muodostetaan hienosti CSS-sella näkyviin. Sivusta myös
-                löytyy kartaa, jossa näkyy lähellä olevä kansainväliset ravintolat.
-                Meidän sivun kohderyhmä ovat ihmisiä, jolle kiinostaa kokeilla
-                kansainvälinen ruoka ja tykää ruoan tekemistä.
+                Sivusto on tarkoitettu niille, jotka ovat kiinnostuneita kansainvälisestä ruoasta tai ylipäätään
+                kulinaristeille.
+                Reseptit-osiossa käyttäjä pystyy etsimään haluamansa ruokareseptit kirjoittamalla hakukenttään hakusanan
+                esim. “chicken”
+                tai “fish”. Jos käyttäjän syöttämä teksti ei viittaa mihinkään sanaan, näytölle tulostuu viesti “Kokeile
+                uudestaan”.
+                “Katso resepti” nappia painaamalla, käyttäjä ohjataan uudelle välilehdelle (ensisijaisesti
+                reseptiohjesivulle). Jos taas
+                reseptiohjesivua ei ole määritelty kyseiselle reseptille, niin sen sijaan uudelle välilehdelle avautuu
+                ohje
+                videomuodossa. Ruoka reseptien data saadaan TheMealDB API:n kautta. Reseptilaatikoiden asetteluihin on
+                käytetty gridiä.
+
             </p>
         </section>
         <section class="aloitus">
             <h2>Rajapinnat</h2>
-            <p>
-                Meilla on 2 rajaapinaat köyttössä tähään. Kartaa tehtiin Mapboxilla.
-                Lähimmät ravintolan sijainnit ja tiedot kutsutiin Mapboxin rajapinnalta.
-            </p>
-            <p>
-                Resepti etsimiseen meilla on themealdb rajapinta käyttössä.
-                Sieltä löytyy monipuoliset kansainväliset ruokareseptit.
-            </p>
-
-            <a href="https://docs.mapbox.com/mapbox-gl-js/api/">Kartaa rajapinta</a>
-            <a href="https://www.themealdb.com/api.php">Resepti rajapinta</a>
+            <p>Projektissa on käytetty kahta rajapintaa.</p>
+            <ul>
+                <li>Kartta on toteutettu <a href="https://docs.mapbox.com/mapbox-gl-js/api/">Mapboxilla</a>, joka
+                    ilmoittaa
+                    käyttäjälleen
+                    lähimpien
+                    ravintoloiden sijainnit.</li>
+                <li>
+                    Kansainvälisten reseptien etsimiseen on käytetty <a
+                        href="https://www.themealdb.com/api.php">TheMealDB</a>
+                    rajapintaa.</li>
+            </ul>
         </section>
 
         <section class="aloitus">
@@ -91,11 +99,20 @@
 
         <section class="aloitus">
             <h2>Video</h2>
-
-
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qBYG0OqH1C0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h2>Audio</h2>
+            <audio controls="">
+                <source src="piilo/video_aani.m4a" type="audio/mpeg">
+            </audio>
+            <h2>Kuvakäsikirjoitus</h2>
+            <figure>
+                <img src="piilo/Kuvakasikirjoitus1 rajattu.jpg" alt=""><img src="piilo/Kuvakasikirjoitus2 rajattu.jpg"
+                    alt="">
+            </figure>
         </section>
-
-
     </main>
 
     <!-- Footer section -->
