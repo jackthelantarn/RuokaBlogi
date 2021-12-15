@@ -12,40 +12,38 @@ function setupRecepie(url) {
     fetch(url).then(function (response) {
         return response.json()
     }).then(function (json_data) {
-        console.log(json_data)
         if (json_data.meals) {
             for (const meal of json_data.meals) {
-
                 //if recepie source found
+
                 if (meal.strSource != null) {
                     let source = meal.strSource
                     let secureSource = source.substr(0, 5)
-
                     //if recepie source website is secure
                     if (secureSource == "https") {
                         html += `<section class=" recepie_content" data-id="${meal.idMeal}">
                          <a href="${meal.strSource}" target="_blank" rel="noopener noreferrer"><img src="${meal.strMealThumb}" class="food_img"></a>
-                        <h3 class="food_name">${meal.strMeal}</h3>
-                        <button type="submit" onclick="window.open('${meal.strSource}')" class="recepie_btn"
+                            <h3 class="food_name">${meal.strMeal}</h3>
+                            <button type="submit" onclick="window.open('${meal.strSource}')" class="recepie_btn"
                             id="recepie_btn">Resepti
                         </button>
                     </section>`
-                    }
-                } else {
-                    //if recepie source website is not secure
-                    html += `<section class=" recepie_content" data-id="${meal.idMeal}">
+                        //if recepie source website is not secure
+                    } else {
+                        html += `<section class=" recepie_content" data-id="${meal.idMeal}">
                         <a href="${meal.strYoutube}" target="_blank" rel="noopener noreferrer"><img src="${meal.strMealThumb}" class="food_img"></a>
                             <h3 class="food_name">${meal.strMeal}</h3>
                             <button type="submit" onclick="window.open('${meal.strYoutube}')" class="recepie_btn" id="recepie_btn" >Resepti
                             </button> 
                     </section>`
-
+                    }
                 }
 
 
             }
             section.classList.remove("not_found");
             section.innerHTML = html;
+
 
         } else {
             //adds css for error message
@@ -69,6 +67,7 @@ function searchmeal() {
 
 }
 
+//keypress event listener
 document.getElementById("search").addEventListener("keyup", function (event) {
     if (event.code == "Enter") {
         event.preventDefault();
