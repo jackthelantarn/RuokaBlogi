@@ -6,7 +6,6 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  
 }
 
 .banner-area {
@@ -28,7 +27,6 @@ body {
   color: #fff;
   letter-spacing: 0.5px;
   padding: 70px;
-  
 }
 .content-area {
   display: flex;
@@ -45,83 +43,77 @@ h1 {
 }
 /* Main area */
 
-main{
+main {
   width: 80%;
   margin: auto;
   margin-bottom: 40px;
 }
 
-
-.image{
+.image {
   width: 100%;
   height: auto;
   max-width: 300px;
   float: left;
 }
 
-.image2{
+.image2 {
   width: 100%;
   height: auto;
   max-width: 300px;
   float: right;
-
 }
 
-
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
-  
+  padding-top: 40px;
 }
 
-.colom-content{
+.colom-content {
   width: 100%;
 }
 
-.content_about_us{
+.content_about_us {
   padding: 40px 50px;
 }
 
-.content_about_us h3{
-  font-weight:700;
-  font-size:25px;
-  margin-bottom:20px;
+.content_about_us h3 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-.content_about_us p{
-  font-weight:400;
-  font-size:16px;
-  margin-bottom:20px;
-  margin-bottom:15px;
+.content_about_us p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 1.7em;
 }
- .content_text_left{
+.content_text_left {
   width: 70%;
 }
 
-.content_text_right{
-  margin-left: 350px; 
+.content_text_right {
+  margin-left: 350px;
   width: 70%;
-} 
+}
 
-@media screen and (max-width: 1000px){
-  .container{
+@media screen and (max-width: 1000px) {
+  .container {
     flex-flow: row wrap;
+    padding-top: 40px;
   }
-  .content_text_left{
-  padding:0;
-  width: 100%;
-}
+  .content_text_left {
+    padding: 0;
+    width: 100%;
+  }
 
-.content_text_right{
-  margin: 0;
-  width: 100%;
-}
-main{
-  overflow-x:hidden;
-
-} 
-
-
-
+  .content_text_right {
+    margin: 0;
+    width: 100%;
+  }
+  main {
+    overflow-x: hidden;
+  }
 }
