@@ -87,3 +87,8 @@ img {
   height: auto;
 }
 
+figcaption {
+  margin: auto;
+  font-size: 12px;
+  line-height: 1.7em;
+}
