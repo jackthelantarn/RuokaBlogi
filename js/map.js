@@ -29,7 +29,7 @@ function setmap(center, json_data) {
     // marker and popup for current location
     new mapboxgl.Marker({
         color: "blue",
-        draggable: true
+        draggable: false
     }).setLngLat(center).setPopup(new mapboxgl.Popup({ offset: 25 })
         .setHTML(
             `<h3>${"Olet Tässä"}</h3>`
@@ -38,9 +38,7 @@ function setmap(center, json_data) {
 
     // restaurants marker and popup
     for (const feature of json_data.features) {
-        const elem = document.createElement('div');
-        elem.className = 'marker'
-        new mapboxgl.Marker(elem).setLngLat(feature.geometry.coordinates).setPopup(
+        new mapboxgl.Marker({ color: "red" }).setLngLat(feature.geometry.coordinates).setPopup(
             new mapboxgl.Popup({ offset: 25 })
                 .setHTML(
                     `<h3>${feature.text}</h3><p>${feature.properties.address}</p>`
